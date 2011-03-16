@@ -1,0 +1,6 @@
+import com.google.appengine.api.blobstore.BlobKey
+def imageKey = params.blobKey 
+//log.info  "hey " + imageKey
+def blob = new BlobKey(imageKey)
+//def image = images.makeImageFromBlob(blob)
+blob.serve response

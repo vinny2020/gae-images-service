@@ -1,0 +1,95 @@
+  355  curl -v  -F "george=@/tmp/vincentstoessel.jpg" http://localhost:8080/image/new
+  356  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://localhost:8080/image/new
+  357  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://localhost:8080/image/new
+  358  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://localhost:8080/image/new
+  359  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://localhost:8080/image/new
+  360  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://localhost:8080/image/new
+  361  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://localhost:8080/image/new
+  362  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://localhost:8080/image/new
+  363  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://xaymacastudios.appspot.com/image/new
+  364  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://xaymacastudios.appspot.com/image/new
+  365  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://xaymacastudios.appspot.com/image/new
+  377   history |grep curl
+  378  curl -v -F "transXml=@/Volumes/ushare/src/EasyTools/data/transform.xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  379  curl -v -F "transXml=@/Volumes/ushare/src/EasyTools/data/transform.xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  380  curl -X -d "@/Volumes/ushare/src/EasyTools/data/transform.xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  381  curl -X -d @/Volumes/ushare/src/EasyTools/data/transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  382  curl -X -d @transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  383  curl -X -d @transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  385  curl -X -d @transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  386  curl -X -d transXml@transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  387  curl -X POST  -F "transXml@transform.xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  388  curl -X POST  -d "transXml@transform.xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  389  curl -X PUT  -d "transXml@transform.xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  390  curl -v  -X PUT  -d "transXml@transform.xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  391  curl -v  -X PUT  -d "transXml@transform.xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  392  curl -v  -X PUT  -d @transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  393  curl -v  -X PUT  -d @transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  394  curl -v  -X PUT  -d @transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  395  curl -v  -X PUT  -d @transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  396  curl -v  -X PUT  -d @transform.xml http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  397  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  398  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  399  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  400  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  401  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  402  curl -v  -X PUT  -d hh@transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  403  curl -v  -X PUT  -F hh@transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYaNjjib3EXeLdtYdBaQ/
+  404  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  407  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  408  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  409  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  410  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  411  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  412  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  413  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  414  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  415  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  416  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  417  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  418  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  419  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  420  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  421  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  422  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  423  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  424  curl -v  -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  425  curl   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  426  curl   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  427  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  428  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  429  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  430  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  434  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  435  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  437  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  438  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  439  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  440  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  441  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  442  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  443  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  444  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  445  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  446  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  447  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  448  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  449  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  451  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  452  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://localhost:8080/image/transform/_NbMYNjjib3EXeLdtYdBaQ/
+  453  history |grep curl 
+  454  history |grep curl |grep xaymaca
+  455  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  456  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  458  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  459  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  460  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  461  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  462  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  474  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  475  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  476  curl -v   -X PUT  -d @transform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform/AMIfv94edzuIc278009qa0VO2OORM-Adz5I1gm8MgspR341tr-6fPsOj8e7zHMW4lxh_-NvuCf0SN-7pcJRlZpD1yEcQJPs_Tu5T77DAZm3UrIRwUYqchLVwf9mM34pTlyz-foE5MZ4onYGtu8STgM17W1UrBzNhGw/
+  477  history |grep curl
+  480    curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://xaymacastudios.appspot.com/image/new
+  495  history | grep curl 
+  501  history |grep curl > /Volumes/ushare/src/EasyTools/data/new_curl_commands 

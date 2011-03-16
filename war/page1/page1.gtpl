@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="all" />
+		<meta name="generator" content="RapidWeaver" />
+		
+		<title>list</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/urban/styles.css"  />
+		<link rel="stylesheet" type="text/css" media="print" href="../rw_common/themes/urban/print.css"  />
+		<link rel="stylesheet" type="text/css" media="handheld" href="../rw_common/themes/urban/handheld.css"  />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/urban/css/sidebar/sidebar_right.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/urban/css/header/buildings_industrial.css" />
+		
+		
+		<script type="text/javascript" src="../rw_common/themes/urban/javascript.js"></script>
+		
+		
+		
+	</head>
+<body>
+<div id="container"><!-- Start container -->
+	<div id="pageHeader"><!-- Start page header -->
+		<div id="buildings"></div>
+		
+		<h1>XaymacaStudios</h1>
+		<h2>Done right the first time...</h2>
+	</div><!-- End page header -->
+
+	<div id="contentContainer"><!-- Start main content wrapper -->
+		<div id="content"><!-- Start content -->
+			<div class="filesharing-description"></div>
+		</div><!-- End content -->
+		<div class="clearer"></div>
+		<div id="breadcrumbcontainer"><!-- Start the breadcrumb wrapper -->
+			
+		</div><!-- End breadcrumb -->
+	</div><!-- End main content wrapper -->
+	
+	<div id="sidebarContainer"><!-- Start Sidebar wrapper -->
+		<div id="navcontainer"><!-- Start Navigation -->
+			<ul><li><a href="../" rel="self">Home</a></li><li><a href="../page2/page2.gtpl" rel="self">upload</a></li><li><a href="page1.gtpl" rel="self" id="current">list</a></li></ul>
+			<br style="clear: left;" />
+		</div><!-- End navigation --> 
+		<div id="sidebar"><!-- Start sidebar content -->
+			<h1 class="sideHeader"></h1><!-- Sidebar header -->
+			<!-- sidebar content you enter in the page inspector -->
+			 <!-- sidebar content such as the blog archive links -->
+		</div><!-- End sidebar content -->
+	</div><!-- End sidebar wrapper -->
+	
+	<div class="clearer"></div>
+	
+	<div id="footer"><!-- Start Footer -->
+		<p>&copy; 2010 XaymacaStudios <a href="#" id="rw_email_contact">Contact Me</a><script type="text/javascript">var _rwObsfuscatedHref0 = "mai";var _rwObsfuscatedHref1 = "lto";var _rwObsfuscatedHref2 = ":xa";var _rwObsfuscatedHref3 = "yma";var _rwObsfuscatedHref4 = "ca@";var _rwObsfuscatedHref5 = "gma";var _rwObsfuscatedHref6 = "il.";var _rwObsfuscatedHref7 = "com";var _rwObsfuscatedHref = _rwObsfuscatedHref0+_rwObsfuscatedHref1+_rwObsfuscatedHref2+_rwObsfuscatedHref3+_rwObsfuscatedHref4+_rwObsfuscatedHref5+_rwObsfuscatedHref6+_rwObsfuscatedHref7; document.getElementById('rw_email_contact').href = _rwObsfuscatedHref;</script></p>
+	</div><!-- End Footer -->
+	
+	<div id="sideOverlay"></div>
+</div><!-- End container -->
+</body>
+</html>

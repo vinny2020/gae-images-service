@@ -1,0 +1,409 @@
+<%
+        import  com.xaymaca.appengine.FlickrHelper
+        def flickr = new FlickrHelper()
+
+
+        fURL = flickr.retrieveRandomFrontImage();
+
+        %>
+<html>
+<head>
+    <title>
+        Functional Google Image REST API TEST
+    </title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jqueryRestTest.js"></script>
+
+
+</head>
+<body>
+
+The Google Image REST tester <br/>
+
+
+<!--
+ TEST 1:    Upload a local  image  to the blobstore
+
+<a href="/george/image/page2.gtpl"> Upload testing tool</a> (updated)        <br/>-->
+
+Random image:<br/>
+
+
+<script type="text/javascript" language="javascript">
+
+    jQuery(document).ready(function() {
+    fURL = "${fURL}" ;
+    jQuery('#randomflick').attr( 'src', fURL );
+    });
+
+
+</script>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+Part I: Storage:
+<br/>
+<br/>
+
+<br/>
+<br/>
+
+TEST 1: Upload this random Flickr Image to the blobstore for further processing:<br/>
+<img id="randomflick" src="/images/ajax-loader.gif" alt="random flickr image"/> <br/>
+
+<br/>
+<br/>
+
+
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+
+var url1 = 'http://xaymacastudios.appspot.com/image/fromUrl/' + fURL;
+
+var key2 ;
+//store an image from a url
+
+jQuery.get(url1, function(data){
+
+key2 = jQuery(data).contents().find( 'key' ).text() ;
+
+jQuery('#output2').html("<b>Image is now stored in the app engine blobstore as : " + key2 + "</b>" ) ;
+
+
+var string2 = (new XMLSerializer()).serializeToString(data);
+
+jQuery('#xmloutput2').text(string2);
+if(key2 != null) {
+var imgurl2 = '/image/' + key2 + '/'
+jQuery('#img2').attr( 'src', imgurl2 );
+
+
+
+
+// simple transform method : getServingUrl()
+
+jQuery.get('/image/simpletransform/' + key2 + '/200/false/', function(data){
+
+
+jQuery('#output1').html("Image key is: " + jQuery(data).contents().find( 'key' ).text()) ;
+var key1 = jQuery(data).contents().find( 'key' ).text() ;
+
+
+var string1 = (new XMLSerializer()).serializeToString(data);
+  //err1 = data
+jQuery('#xmloutput1').text(string1);
+jQuery('#img1').attr( 'src', '/image/' + key1 + '/' );
+}).error(function() {
+
+jQuery('#output1').html('<span style="font-color:red">Error!</span>') ;
+//var string1 = (new XMLSerializer()).serializeToString(err1);
+//jQuery('#xmloutput1').text(string1);
+
+})
+
+
+
+
+//flip stored image horizontal
+
+
+jQuery.get('/image/flip/' + key2 + '/horizontal/', function(data){
+
+
+
+//display of the urls :
+
+jQuery('#rest1').html(' Method: Get, URL: <b> /image/simpletransform/' + key2 + '/300/false/ </b> ')
+jQuery('#rest3').html(' Method: Get, URL: <b> /image/flip/' + key2 + '/horizontal/ </b> ')
+jQuery('#rest4').html(' Method: Get, URL: <b> /image/flip/' + key2 + '/vertical/ </b>')
+jQuery('#rest5').html(' Method: Get, URL: <b> /image/rotate/' + key2 + '/90/ </b>')
+jQuery('#rest6').html(' Method: Get, URL: <b> /image/crop/' + key2 + '/0.1/0.1/0.9/0.9/ </b>')
+jQuery('#rest7').html(' Method: Get, URL: <b>/image/resize/' + key2 + '/200/300/ </b>')
+jQuery('#rest8').html(' Method: Get, URL: <b> /image/random/' + key2 + '/ </b>')
+
+
+jQuery('#output3').html("Image key is: " + jQuery(data).contents().find( 'key' ).text()) ;
+var key3 = jQuery(data).contents().find( 'key' ).text() ;
+
+  var err3 = data
+var string3 = (new XMLSerializer()).serializeToString(data);
+
+jQuery('#xmloutput3').text(string3);
+jQuery('#img3').attr( 'src', '/image/' + key3 + '/' );
+}).error(function() {
+
+
+jQuery('#output3').html('<span style="font-color:red">Error!</span>') ;
+//var string3 = (new XMLSerializer()).serializeToString(err3);
+//jQuery('#xmloutput3').text(string3);
+
+})
+
+//flip stored image verticle
+
+jQuery.get('/image/flip/' + key2 + '/vertical/', function(data){
+
+
+jQuery('#output4').html("Image key is: " + jQuery(data).contents().find( 'key' ).text()) ;
+
+ var err4 = data
+var string4 = (new XMLSerializer()).serializeToString(data);
+var key4 = jQuery(data).contents().find( 'key' ).text() ;
+
+
+jQuery('#xmloutput4').text(string4);
+jQuery('#img4').attr( 'src', '/image/' + key4 + '/' );
+}).error(function() {
+
+jQuery('#output4').html('<span style="font-color:red">Error!</span>') ;
+//var string4 = (new XMLSerializer()).serializeToString(err4);
+//jQuery('#xmloutput4').text(string4);
+
+})
+
+//rotate stored image 90 degrees
+
+jQuery.get('/image/rotate/' + key2 + '/90/', function(data){
+
+jQuery('#output5').html("Image key is: " + jQuery(data).contents().find( 'key' ).text()) ;
+
+
+var string5 = (new XMLSerializer()).serializeToString(data);
+var key5 = jQuery(data).contents().find( 'key' ).text() ;
+var err5 = data
+
+jQuery('#xmloutput5').text(string5);
+jQuery('#img5').attr( 'src', '/image/' + key5 + '/' )
+
+}).error(function() {
+
+jQuery('#log').ajaxError(function(event, request, options, error) {
+  jQuery(this).text(request.responseText);
+
+
+
+     var realError = jQuery('.h1', request.responseText );
+     alert('real error:' + realError.length ) ;
+
+});
+
+
+
+jQuery('#output5').html('<span style="font-color:red">Error!</span>') ;
+//var string5 = (new XMLSerializer()).serializeToString(err5);
+//jQuery('#xmloutput5').text(string5);
+})
+
+//crop image
+
+jQuery.get('/image/crop/' + key2 + '/0.1/0.1/0.9/0.9/', function(data){
+
+jQuery('#output6').html("Image key is: " + jQuery(data).contents().find( 'key' ).text()) ;
+
+
+var string6 = (new XMLSerializer()).serializeToString(data);
+var key6 = jQuery(data).contents().find( 'key' ).text() ;
+ //var err6 = data
+
+jQuery('#xmloutput6').text(string6);
+jQuery('#img6').attr( 'src', '/image/' + key6 + '/' );
+}).error(function() {
+
+jQuery('#output6').html('<span style="font-color:red">Error!</span>') ;
+//var string6 = (new XMLSerializer()).serializeToString(err6);
+jQuery('#xmloutput6').text(jQuery.httpData(string6));
+
+})
+
+
+
+//image resize
+
+jQuery.get('/image/resize/' + key2 + '/200/300/', function(data){
+
+jQuery('#output7').html("Image key is: " + jQuery(data).contents().find( 'key' ).text()) ;
+
+
+var string7 = (new XMLSerializer()).serializeToString(data);
+var key7 = jQuery(data).contents().find( 'key' ).text() ;
+err7 = data;
+
+jQuery('#xmloutput7').text(string7);
+jQuery('#img7').attr( 'src', '/image/' + key7 + '/' );
+})
+
+
+// I feel lucky
+
+jQuery.get('/image/random/' + key2 + '/', function(data){
+
+jQuery('#output8').html("Image key is: " + jQuery(data).contents().find( 'key' ).text()) ;
+
+
+var string8 = (new XMLSerializer()).serializeToString(data);
+var key8 = jQuery(data).contents().find( 'key' ).text() ;
+var err8 = data
+
+jQuery('#xmloutput8').text(string8);
+jQuery('#img8').attr( 'src', '/image/' + key8 + '/' );
+ 
+
+                     
+jQuery('#output8').html('<span style="font-color:red">Error!</span>') ;
+
+var string8 = jQuery.httpData(xhr)
+jQuery('#xmloutput8').text(string8);
+
+
+});
+
+
+
+
+
+}
+
+});
+
+
+
+
+
+</script>
+
+
+<div id="output2">Loading..</div>
+<img id="img2" src="/images/ajax-loader.gif" alt="example image 2"/>
+
+<div style="width:300px;font-weight:bold;font-family: Times New Roman, Times, serif;" id="xmloutput2">Loading xml..
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+Part II: Manipulations:
+<br/>
+<br/>
+
+
+TEST 2: <span style="font-weight:bold">getServingUrl() method (with image id)</span>
+
+
+<p id="rest1"></p>
+
+
+<div id="output1">Loading..</div>
+<img id="img1" src="/images/ajax-loader.gif" alt="example image "/>
+
+<div style="width:300px;font-weight:bold;font-family: Times New Roman, Times, serif;" id="xmloutput1">Loading xml..
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+TEST 3: <span style="font-weight:bold">Flip horizontal</span>
+
+
+<p id="rest3"></p>
+
+
+<div id="output3">Loading..</div>
+<img id="img3" src="/images/ajax-loader.gif" alt="example image  3"/>
+
+<div style="width:300px;font-weight:bold;font-family: Times New Roman, Times, serif;" id="xmloutput3">Loading xml..
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+TEST 4: <span style="font-weight:bold">Flip Verticle</span>
+<p id="rest4"></p>
+<br/>
+
+<div id="output4">Loading..</div>
+<img id="img4" src="/images/ajax-loader.gif" alt="example image 4"/>
+
+<div style="width:300px;font-weight:bold;font-family: Times New Roman, Times, serif;" id="xmloutput4">Loading xml..
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+TEST 5: <span style="font-weight:bold">Rotate 90 degrees</span>
+<p id="rest5"></p>
+
+<div id="output5">Loading..</div>
+<img id="img5" src="/images/ajax-loader.gif" alt="example image 5"/>
+
+<div style="width:300px;font-weight:bold;font-family: Times New Roman, Times, serif;" id="xmloutput5">Loading xml..
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+TEST 6: <span style="font-weight:bold">Crop (300x200) </span>
+<p id="rest6"></p>
+
+<div id="output6">Loading..</div>
+<img id="img6" src="/images/ajax-loader.gif" alt="example image 6"/>
+
+<div style="width:300px;font-weight:bold;font-family: Times New Roman, Times, serif;" id="xmloutput6">Loading xml..
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+TEST 7: <span style="font-weight:bold">Scale Image</span>
+<p id="rest7"></p>
+
+<div id="output7">Loading..</div>
+<img id="img7" src="/images/ajax-loader.gif" alt="example image 7"/>
+
+<div style="width:300px;font-weight:bold;font-family: Times New Roman, Times, serif;" id="xmloutput7">Loading xml..
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+TEST 8: <span style="font-weight:bold">I Feel lucky</span>
+<p id="rest8"></p>
+
+<div id="output8">Loading..</div>
+<img id="img8" src="/images/ajax-loader.gif" alt="example image 8"/>
+
+<div style="width:300px;font-weight:bold;font-family: Times New Roman, Times, serif;" id="xmloutput8">Loading xml..
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<div id="log" ></div>
+
+</body>
+</html>
+
+
+
+
+

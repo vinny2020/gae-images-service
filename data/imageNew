@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transforms>
+<image key="imageKey" />
+<transform type="resize">
+<scale height="40"/>
+<scale width="40"/>
+</transform>
+<transform type="crop">
+<position leftX="0.1" topY="0.2" rightX=".5"  bottomY=".5" />
+</transform>
+<transform type="rotate">
+<angle degrees="30"/> 
+</transform>
+<transform type="flip>
+<horizontal />
+</transform>
+<transform type="flip>
+<vertical />
+</transform>
+<transform type="feel">
+<lucky />
+<transform/>
+</transforms>

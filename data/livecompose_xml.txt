@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- rename to have an .xml extention, guru does not allow "xml" attachment -->
+<compose>
+<composite imgKey="049b2d23-4d65-48dd-9c00-6453fc77bb4e" xOffset="10" yOffset="0"  opacity="0.5" anchor="BOTTOM_RIGHT" />
+<composite imgKey="69ad8c3c-73bb-4203-9ebe-6e55803d49ae" xOffset="5" yOffset="0"  opacity="0.5" anchor="CENTER_CENTER" />
+<finalImage width="300" height="200" color="0xffffffff" encodeAs="PNG" /> 
+</compose>
