@@ -7,7 +7,7 @@ import com.google.appengine.api.blobstore.BlobInfoFactory
  * User: xaymaca
  * Date: 2/21/11
  * Time: 3:17 PM
- * To change this template use File | Settings | File Templates.
+  to be used in a cron job to delete older blobs
  */
 List<BlobInfo> blobsToDelete = new LinkedList<BlobInfo>();
 Iterator<BlobInfo> iterator = new BlobInfoFactory().queryBlobInfos();

@@ -30,10 +30,6 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
-  <component name="Git.Settings">
-    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
-    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
-  </component>
   <component name="GradleUISettings">
     <setting name="root" />
   </component>
@@ -196,7 +192,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gaelyk-project.iml" filepath="$PROJECT_DIR$/gaelyk-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restapi.iml" filepath="$PROJECT_DIR$/restapi.iml" />
     </modules>
   </component>
   <component name="ProjectResources">

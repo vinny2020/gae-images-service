@@ -48,7 +48,7 @@ if(params != null ){
             def creator = new BlobCreator()  
             def newKey = creator.addBlob(imageKey,"george",binImage)
             if(newKey != null ) {
-               log.info "we hotness! " + "oldkey " + imageKey + " new key " + newKey
+               log.info "we are good.  " + "oldkey " + imageKey + " new key " + newKey
                 response.status = 302
        redirect "/success?key=${newKey}"
 

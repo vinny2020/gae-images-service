@@ -57,7 +57,7 @@ if (ServletFileUpload.isMultipartContent(request)) {
 
         def keymap = creator.addBlob("new", "george", binImage, mime)
         if (keymap != null) {
-           // log.info "we hotness! " + " new key " + keymap.getClass()
+           // log.info "we are good.  " + " new key " + keymap.getClass()
 
             if (!keymap.get("cached")) {
                 Persister p = new Persister(keymap.get("blobKey"))
@@ -67,19 +67,10 @@ if (ServletFileUpload.isMultipartContent(request)) {
 
 
 
-            if (params.testing == "true") {
-                log.info "testing mode"
-                response.setContentType("text/html")
-                responseXML = """&lt;?xml version="1.0" encoding="UTF-8"?&gt;   <br/>
-&lt;image&gt; <br/>
-&lt;key&gt;${uuid}&lt;/key&gt;     <br/>
-&lt;fileURL&gt;/image/${uuid}/&lt;/fileURL&gt;    <br/>
-&lt;/image&gt;
-"""
-            }
 
 
-            else {
+
+
                 response.setContentType("application/xml")
                 responseXML = """<?xml version="1.0" encoding="UTF-8"?>
 <image>
@@ -87,7 +78,7 @@ if (ServletFileUpload.isMultipartContent(request)) {
 <fileURL>/image/${uuid}/</fileURL>
 </image>
 """
-            }
+
 
             // render image out
             //out << pic.imageData

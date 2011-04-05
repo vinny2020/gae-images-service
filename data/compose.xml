@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<compose>
-<composite imgKey="cc0ec6d0-de93-4fc4-afd7-4e16a3a1a583" xOffset="10" yOffset="0"  opacity="0.5" anchor="BOTTOM_RIGHT" />
-<composite imgKey="175c1bc2-0ca0-46db-9afb-23bf1ee07b23" xOffset="5" yOffset="0"  opacity="0.5" anchor="CENTER_CENTER" />
-<finalImage width="300" height="200" color="0xffffffff" encodeAs="PNG" /> 
-</compose>

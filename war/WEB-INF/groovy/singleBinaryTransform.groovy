@@ -131,7 +131,7 @@ def keymap = creator.addBlob(memkey, "george", binImage, mime)
 
 
 if (keymap != null && keymap.get("blobKey") != null) {
-    //log.info "we hotness! " + "oldkey " + blobKeyString + " new key " + newKey
+    //log.info "we are good.  " + "oldkey " + blobKeyString + " new key " + newKey
 
     if (keymap.get("cached") == false) {
 

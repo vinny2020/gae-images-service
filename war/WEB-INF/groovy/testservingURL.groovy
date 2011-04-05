@@ -36,7 +36,7 @@ def lucky       = image.rotate(90)
 
         def newKey = creator.addBlob("id","george",imageArray, mime )
         if(newKey != null ) {
-            // log.info "we hotness! " +  " new key " + newKey
+            // log.info "we are good.  " +  " new key " + newKey
             
             Persister p = new Persister(newKey)
             uuid = p.persist()

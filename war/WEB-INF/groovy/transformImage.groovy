@@ -1,16 +1,11 @@
 import com.google.appengine.api.blobstore.BlobKey
-import com.google.appengine.api.blobstore.BlobstoreService
-import com.google.appengine.api.blobstore.BlobstoreServiceFactory
-import groovy.util.XmlSlurper
-import com.google.appengine.api.images.Image;
-import com.google.appengine.api.images.ImagesService;
-import com.google.appengine.api.images.ImagesServiceFactory;
-import com.google.appengine.api.images.Transform;
-import com.google.appengine.api.images.CompositeTransform;
+import com.google.appengine.api.images.CompositeTransform
+import com.google.appengine.api.images.ImagesService
+import com.google.appengine.api.images.ImagesService.OutputEncoding
+import com.google.appengine.api.images.ImagesServiceFactory
 import com.xaymaca.appengine.BlobCreator
 import com.xaymaca.appengine.IdExchange
-import com.google.appengine.api.datastore.Entity
-import com.google.appengine.api.images.ImagesService.OutputEncoding;
+import com.xaymaca.appengine.Persister
 
 //log.info   "our xml in here? "   + request.getAttributeNames().dump()
 
@@ -141,23 +136,20 @@ def mime = "image/" + imgType.toLowerCase()
 def creator = new BlobCreator()  
 def newKey = creator.addBlob(blobKeyString,"george",binImage, mime)
     
-if(newKey != null ) {
-    //log.info "we hotness! " + "oldkey " + blobKeyString + " new key " + newKey
-        
-    def uuid =  UUID.randomUUID().toString()
-    //  log.info " uuid is " + uuid
-           
-    def imageIDs = new Entity("ImageIDs")
-    imageIDs.shortID =  uuid
-    imageIDs.blobKey = newKey
-    imageIDs.save()
+
+
+    if (newKey != null) {
+           // log.info "we are good.  " + " new key " + keymap.getClass()
+
+            if (!newKey.get("cached")) {
+                Persister p = new Persister(newKey.get("blobKey"))
+                uuid = p.persist()
+            }
     
     
     // set response type
     response.setContentType( "text/xml" )
 
-    // render image out
-    //sout << pic.imageData
  
     def responseXML = """
     <?xml version="1.0" encoding="UTF-8"?>
@@ -168,4 +160,20 @@ if(newKey != null ) {
     
     """
     out << responseXML
-}
+    }
+    else {
+         response.status = 500
+            StringBuilder errorXml = new StringBuilder();
+            sb.append("<?xml version=\" 1.0 \" encoding=\" UTF - 8 \"?>");
+            sb.append("<errors>\n");
+            sb.append("<error type=\"timeout\">\n");
+            sb.append("<error message=\"Timed Out, URLFetch exceeded 10 seconds\">\n");
+            sb.append("<errors>\n");
+
+            out << errorXml.toString()
+
+
+    }
+
+
+

@@ -83,7 +83,7 @@ if(params != null ){
             
             def newKey = creator.addBlob(imageKey,"george",binImage, mime)
             if(newKey != null ) {
-                //log.info "we hotness! " + "oldkey " + imageKey + " new key " + newKey
+                //log.info "we are good.  " + "oldkey " + imageKey + " new key " + newKey
                 
                 def uuid =  UUID.randomUUID().toString()
                 //  log.info " uuid is " + uuid

@@ -59,7 +59,7 @@ def newKey = linkedImage.getPath().split('=')[0].split('/').last()
 //def newKey = creator.addBlob(blobKeyString,"george",binImage)
     
 if(newKey != null ) {
-    //log.info "we hotness! " + "oldkey " + blobKeyString + " new key " + newKey
+    //log.info "we are good.  " + "oldkey " + blobKeyString + " new key " + newKey
         
     // set response type
         

@@ -80,7 +80,7 @@ def mime = "image/" + imgType.toLowerCase()
 
 Map newKeyMap = creator.addBlob(urlKey,"george",imageArray, mime )
 if(newKeyMap != null ) {
-     //log.info "we hotness! " +  " new key " + newKey
+     //log.info "we are good.  " +  " new key " + newKey
 
      def newKey = newKeyMap.get("blobKey") ;
      def isCached = newKeyMap.get("cached") ;

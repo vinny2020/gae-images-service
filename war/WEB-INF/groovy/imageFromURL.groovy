@@ -49,7 +49,7 @@ def creator = new BlobCreator()
 
 def keymap = creator.addBlob(memkey, "george", imageArray, mime)
 if (keymap != null && keymap.get("blobKey") != null) {
-  // log.info "we hotness! " +  " new key " + newKey
+  // log.info "we are good.  " +  " new key " + newKey
   if (keymap.get("cached") == false) {
     Persister p = new Persister(keymap.get("blobKey"))
     uuid = p.persist()
