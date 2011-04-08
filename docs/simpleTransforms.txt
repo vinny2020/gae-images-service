@@ -1,0 +1,43 @@
+Simple, Persistant Image Transformations
+
+
+
+Description
+Apply  a simple transformation to an image and save it in the Blobstore for future use (see streamTransform.txt for the unsaved option)
+
+URL
+ http://xaymacastudios.appspot.com/image/resize/${IMAGE_KEY}/300/200/
+
+Available Formats
+XML
+
+HTTP Method
+GET
+
+Requires Authentication
+False
+
+Headers
+None
+
+Parameters
+For a simple transformation we capture 3 values  (short image key, size (must a multiple of 32) and crop (boolean true or false) 
+in the sample url below:
+
+
+curl -v   http://xaymacastudios.appspot.com/image/resize/326015tw/300/200/
+
+
+Responses
+If you receive a HTTP 200 OK header, you can assume the image was successfully uploaded. Still check the key field for null.
+All non-http errors well be set to 500
+
+Sample XML Response
+<?xml version="1.0" encoding="UTF-8" ?>
+<image>
+<key>321025yd</key>
+<fileURL>/image/321025yd/</fileURL>
+</image>
+
+	
+

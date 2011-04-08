@@ -1,0 +1,82 @@
+Simple and Advanced (Composite) Transforms
+
+
+
+Description
+Apply either a simple transformation or a series of transformations to a previously stored image
+
+URL
+http://xaymacastudios.appspot.com/image/transform
+
+
+Available Formats
+xml
+
+HTTP Method
+GET
+
+Requires Authentication
+False
+
+Headers
+None
+
+Parameters
+For a simple transformation we capture 3 values  (short image key, size (must a multiple of 32) and crop (boolean true or false) 
+in the sample url below:
+
+
+curl -v http://xaymacastudios.appspot.com/image/simpletransform/326015tw/200/true/
+
+which translates to : http://xaymacastudios.appspot.com/image/simpletransform/${imgKey}/${size}/${crop}/
+
+for serial (composite) transformations, PUT the more advance XML described below:
+
+The advanced XML file that will contain the image key followed by a list of desired transformations.
+Transformations are executed in the order listed. 
+
+Sample of the advanced XML to be added to the GET body:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<transforms>
+<image key="235070tc"  encodeAs="JPEG"/>
+<transform type="resize">
+<scale height="40"   width="40" />
+</transform>
+<transform type="crop">
+<position leftX="0.1" topY="0.1" rightX="0.9"  bottomY="0.9" />
+</transform>
+<transform type="rotate">
+<angle degrees="90"/> 
+</transform>
+<transform type="flip">
+<orientation direction="horizontal" />
+</transform>
+<transform type="flip">
+<orientation direction="vertical" />
+</transform>
+<transform type="random">
+<enhance  type="I feel lucky"/>
+</transform>
+</transforms>
+
+
+
+
+
+Responses
+If you receive a HTTP 200 OK header, you can assume the image was successfully uploaded. Still check the key field for null.
+All non-http errors well be set to 500
+
+Sample XML Response
+	
+   <?xml version="1.0" encoding="UTF-8"?>
+    <image>
+    <key>235070tc</key>
+    <fileURL>/image/235070tc/</fileURL>
+    </image>
+
+	
+Example CURL Command for advanced transform
+ 
+curl -v   -X PUT  -d @advancedtransform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform

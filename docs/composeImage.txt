@@ -1,0 +1,60 @@
+Description
+combine multiple images into 1 and choose png or jpeg as the output
+
+URL
+ http://xaymacastudios.appspot.com/image/composition
+
+
+Available Formats
+xml
+
+HTTP Method
+PUT
+
+Requires Authentication
+False
+
+Headers
+"Content-Type: text/xml"
+
+Parameters
+xml file describing how 1 or more images should be composited
+
+example xml:
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- rename to have an .xml extention, guru does not allow "xml" attachment -->
+<compose>
+<composite imgKey="235070tc" xOffset="10" yOffset="0"  opacity="0.5" anchor="BOTTOM_RIGHT" />
+<composite imgKey="326015tw" xOffset="5" yOffset="0"  opacity="0.5" anchor="CENTER_CENTER" />
+<finalImage width="300" height="200" color="0xffffffff" encodeAs="PNG" /> 
+</compose>
+
+
+
+
+
+
+
+Responses
+If you receive a HTTP 200 OK header, you can not assume the image was successfully uploaded. Check the key field for null.
+Will change status code on the next version.
+
+Sample  Response
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <image>
+    <key>235070tc</key>
+    <fileURL>/image/235070tc/</fileURL>
+    </image>
+
+	
+
+	
+	
+Example CURL Command
+ 
+curl -v -X PUT  -d @livecompose.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/composition
+
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transforms>
+<image key="326015tw" />
+<transform type="resize">
+<scale height="40"   width="40" />
+</transform>
+<transform type="crop">
+<position leftX="0.1" topY="0.1" rightX="0.9"  bottomY="0.9" />
+</transform>
+<transform type="rotate">
+<angle degrees="90"/> 
+</transform>
+<transform type="flip">
+<orientation direction="horizontal" />
+</transform>
+<transform type="flip">
+<orientation direction="vertical" />
+</transform>
+<transform type="random">
+<enhance  type="I feel lucky"/>
+</transform>
+</transforms>

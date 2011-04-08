@@ -1,0 +1,41 @@
+Simple, Streaming Image Transformations
+
+
+
+Description
+Apply a simple transformation to an image without having to save it in the Blobstore (see imageTransform.txt for working with stored images)
+
+URL
+http://xaymacastudios.appspot.com/stream/resize/300/200/ (see curl example below)
+
+
+Available Formats
+BINARY
+
+HTTP Method
+POST
+
+Requires Authentication
+False
+
+Headers
+None
+
+Parameters
+For a simple transformation we need to send the following parameters in a multi-part form format: submit = submit and  photo={Image BINARY file}
+in the sample url below:
+
+
+ curl -v  -F "photo=@IMG_2029.jpg" -F "submit=submit" http://xaymacastudios.appspot.com/stream/resize/300/200/ -o image.jpg http://xaymacastudios.appspot.com/stream/resize/300/200/
+
+
+
+Responses
+If you receive a HTTP 200 OK header, you can assume the image was successfully uploaded. Still check the key field for null.
+All non-http errors well be set to 500
+
+Sample XML Response
+NONE: YOu will get a direct binary response (image) that must be handled appropriately
+
+	
+

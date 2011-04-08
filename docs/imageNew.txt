@@ -1,0 +1,39 @@
+Description
+create/upload a new image.
+
+URL
+http://xaymacastudios.appspot.com/image/new
+
+
+Available Formats
+xml
+
+HTTP Method
+POST
+
+Requires Authentication
+False
+
+Headers
+None
+
+Parameters
+
+media (Required): The image to be uploaded
+
+Responses
+If you receive a HTTP 200 OK header, you can not assume the image was successfully uploaded. Check the key field for null.
+Will change status code on the next version.
+
+Sample XML Response
+	
+   <?xml version="1.0" encoding="UTF-8"?>
+    <image>
+    <key>235070tc</key>
+    <fileURL>/image/235070tc/</fileURL>
+    </image>
+	
+	
+Example CURL Command
+ 
+  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://xaymacastudios.appspot.com/image/new

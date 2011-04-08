@@ -1,0 +1,8 @@
+this folder (docs) contains the text file documentation.
+example_xml contains sample xml for the complex transformations
+I also included an image you can use with curl to replicate my curl commands in the docs.
+At the project root is a test directory. They contain unit tests wriiten in groovy that use junit.
+All the required libraries for testing are in the "testlib" folder
+Remember that in order to to use the BlobStore, Google requires that billing be enabled.
+Like I said before, I'll be available for support of the app for about a month so feel free to contact me with any problems.
+Vincent
