@@ -1,11 +1,7 @@
 import com.google.appengine.api.blobstore.BlobKey
-import com.google.appengine.api.blobstore.BlobstoreService
 import com.google.appengine.api.blobstore.BlobstoreServiceFactory
-import com.xaymaca.appengine.Hello
 import com.xaymaca.appengine.BlobCreator
-//import groovyx.net.http.HttpURLClient
-//import static groovyx.net.http.ContentType.URLENC
-//import static groovyx.net.http.ContentType.BINARY
+
 
 
 if(params != null ){
@@ -70,8 +66,7 @@ if(params != null ){
             //TODO  add image type switch for this
 
             sout << newImage.imageData
-             Hello h = new Hello()
-             println "say " +  h.say()
+
      
         }
         
