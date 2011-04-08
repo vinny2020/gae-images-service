@@ -1,0 +1,4 @@
+This is an API for using the Google App Engine Image manipulation API.
+I hope people find it useful. To store images, GAE requires that you enable billing 
+to use the BlobStore. As of the time of this writing, the BlobStore can hold as much as 2M and 
+ULRFetch requests are limited to 1Mb and 30 seconds. Please visit the docs to see what the current limitations are.
