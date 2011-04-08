@@ -21,14 +21,14 @@ import org.junit.Ignore
 public class ImageRestTest {
 
     String imageType = 'image/jpeg'
-    String imgKey = "326015tw"
+    String imgKey = "1001hq"
 
 
 
 
     @Test public void getServerURL_once() {
 
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/simpletransform/${imgKey}/600/false/"
         println "uri is " + uri
         storedTransform(baseUrl, uri)
@@ -39,7 +39,7 @@ public class ImageRestTest {
 
     @Test public void getServerURL_fifty() {
 
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/simpletransform/${imgKey}/600/false/"
         println "uri is " + uri
         for (i in 1..50) {
@@ -53,7 +53,7 @@ public class ImageRestTest {
 
 
     @Test public void test_image_resize_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/resize/${imgKey}/300/200/"
         println "uri is " + uri
 
@@ -66,7 +66,7 @@ public class ImageRestTest {
     // with a permanent id
 
     @Test public void test_image_resize_fifty() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/resize/${imgKey}/300/200/"
         // println "uri is " + uri
         for (i in 1..50) {
@@ -77,7 +77,7 @@ public class ImageRestTest {
     }
 
     @Test public void test_image_crop_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/crop/${imgKey}/0.1/0.1/0.9/0.9/"
         println "uri is " + uri
 
@@ -88,7 +88,7 @@ public class ImageRestTest {
     }
 
     @Test public void test_image_crop_fifty() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/crop/${imgKey}/0.1/0.1/0.9/0.9/"
         for (i in 1..50) {
             //println i + ":"
@@ -99,7 +99,7 @@ public class ImageRestTest {
 
 
     @Test public void test_image_rotate_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/rotate/${imgKey}/270/"
         println "uri is " + uri
 
@@ -110,7 +110,7 @@ public class ImageRestTest {
     }
 
     @Test public void test_image_rotate_fifty() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/rotate/${imgKey}/270/"
         for (i in 1..50) {
             //println i + ":"
@@ -121,7 +121,7 @@ public class ImageRestTest {
 
 
     @Test public void test_image_v_flip_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/flip/${imgKey}/vertical/"
         println "uri is " + uri
 
@@ -132,7 +132,7 @@ public class ImageRestTest {
     }
 
     @Test public void test_image_v_flip_fifty() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/flip/${imgKey}/vertical/"
         for (i in 1..50) {
             //println i + ":"
@@ -142,7 +142,7 @@ public class ImageRestTest {
     }
 
     @Test public void test_image_h_flip_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/flip/${imgKey}/horizontal/"
         println "uri is " + uri
 
@@ -153,7 +153,7 @@ public class ImageRestTest {
     }
 
     @Test public void test_image_h_flip_fifty() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/flip/${imgKey}/horizontal/"
         for (i in 1..50) {
             //println i + ":"
@@ -163,7 +163,7 @@ public class ImageRestTest {
     }
 
     @Test public void test_image_lucky_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/lucky/${imgKey}/"
         println "uri is " + uri
 
@@ -174,7 +174,7 @@ public class ImageRestTest {
     }
 
     @Test public void test_image_lucky_fifty() {
-        def baseUrl = "http://xaymacastudios.appspot.com"
+        def baseUrl = "http://hcongruent.appspot.com"
         def uri = "/image/lucky/${imgKey}/"
         for (i in 1..50) {
             //println i + ":"

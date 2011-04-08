@@ -24,7 +24,7 @@ class UploadImageTest {
 
     @Test public void upload() {
 
-        def baseUrl = "http://xaymacastudios.appspot.com/image/new"
+        def baseUrl = "http://hcongruent.appspot.com/image/new"
         assert streamTransform(baseUrl) != null
         println streamTransform(baseUrl)
     }
@@ -32,7 +32,7 @@ class UploadImageTest {
     @Test public void test_new_images() {
 
 
-        def baseUrl = "http://xaymacastudios.appspot.com/image/new"
+        def baseUrl = "http://hcongruent.appspot.com/image/new"
 
 
 
