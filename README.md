@@ -7,7 +7,6 @@ This service is written in Groovy using
 I hope people find it useful. To store images,App Engine requires that your app have billing enabled.
 Images are saved via the GAE BlobStore. As of the time of this writing, the BlobStore can hold as much as 2M and 
 ULRFetch requests are limited to 1Mb and 30 seconds. Please visit the docs to see what the current limitations are.
-
 [Quotas and Limits](http://code.google.com/appengine/docs/java/images/overview.html#Quotas_and_Limits)
 
 TODO:
