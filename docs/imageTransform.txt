@@ -6,7 +6,7 @@ Description
 Apply either a simple transformation or a series of transformations to a previously stored image
 
 URL
-http://xaymacastudios.appspot.com/image/transform
+/image/transform
 
 
 Available Formats
@@ -26,9 +26,11 @@ For a simple transformation we capture 3 values  (short image key, size (must a 
 in the sample url below:
 
 
-curl -v http://xaymacastudios.appspot.com/image/simpletransform/326015tw/200/true/
+note: replace 'hcongruent' with your GAE application id
 
-which translates to : http://xaymacastudios.appspot.com/image/simpletransform/${imgKey}/${size}/${crop}/
+curl -v http://hcongruent.appspot.com/image/simpletransform/326015tw/200/true/
+
+which translates to : http://hcongruent.appspot.com/image/simpletransform/${imgKey}/${size}/${crop}/
 
 for serial (composite) transformations, PUT the more advance XML described below:
 
@@ -79,4 +81,4 @@ Sample XML Response
 	
 Example CURL Command for advanced transform
  
-curl -v   -X PUT  -d @advancedtransform.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/transform
+curl -v   -X PUT  -d @advancedtransform.xml --header "Content-Type: text/xml" http://hcongruent.appspot.com/image/transform

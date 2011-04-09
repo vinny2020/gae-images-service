@@ -6,7 +6,7 @@ Description
 Apply  a simple transformation to an image and save it in the Blobstore for future use (see streamTransform.txt for the unsaved option)
 
 URL
- http://xaymacastudios.appspot.com/image/resize/${IMAGE_KEY}/300/200/
+ http://hcongruent.appspot.com/image/resize/${IMAGE_KEY}/300/200/
 
 Available Formats
 XML
@@ -25,7 +25,7 @@ For a simple transformation we capture 3 values  (short image key, size (must a 
 in the sample url below:
 
 
-curl -v   http://xaymacastudios.appspot.com/image/resize/326015tw/300/200/
+curl -v   http://hcongruent.appspot.com/image/resize/326015tw/300/200/
 
 
 Responses

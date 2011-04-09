@@ -37,7 +37,7 @@ $('#rest4').html(' Method: Get, URL: <b> /image/flip/' + imageID + '/vertical/ <
 $('#rest5').html(' Method: Get, URL: <b> /image/rotate/' + imageID + '/90/ </b>')
 $('#rest6').html(' Method: Get, URL: <b> /image/crop/' + imageID + '/0.1/0.1/0.9/0.9/ </b>')
 $('#rest7').html(' Method: Get, URL: <b>/image/resize/' + imageID + '/200/300/ </b>')
-$('#rest8').html(' Method: Get, URL: <b> /image/random/' + imageID + '/ </b>')
+$('#rest8').html(' Method: Get, URL: <b> /image/lucky/' + imageID + '/ </b>')
 
 
 }
@@ -69,7 +69,7 @@ $(document).ready(function() {
 
 
 
-var url1 = 'http://xaymacastudios.appspot.com/image/fromUrl/' + fURL;
+var url1 = 'http://hcongruent.appspot.com/image/fromUrl/' + fURL;
 
 var key2 ;
 var trueError ;
@@ -164,8 +164,8 @@ $('#img' + index ).attr( 'src', '/image/' + thekey + '/' );
             },
             complete: function(jqXHR, textStatus) {
 
-            total_time =  new Date().getTime() - start_time ;
-            alert('function took ' + total_time/1000 + ' seconds to load') ;
+           // total_time =  new Date().getTime() - start_time ;
+            // alert('function took ' + total_time/1000 + ' seconds to load') ;
 
             }
 
@@ -192,7 +192,7 @@ $('#img' + index ).attr( 'src', '/image/' + thekey + '/' );
  clicktotransform('/image/rotate/' + key2 + '/90/', 5)
  clicktotransform('/image/crop/' + key2 + '/0.1/0.1/0.9/0.9/', 6)
  clicktotransform('/image/resize/' + key2 + '/200/300/', 7)
- clicktotransform('/image/random/' + key2 + '/', 8)
+ clicktotransform('/image/lucky/' + key2 + '/', 8)
 
 
 

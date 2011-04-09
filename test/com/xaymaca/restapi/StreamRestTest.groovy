@@ -32,7 +32,7 @@ public class StreamRestTest {
 
 
     @Test public void test_stream_resize_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/resize/300/200/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/resize/300/200/"
 
         streamTransform(baseUrl)
 
@@ -42,7 +42,7 @@ public class StreamRestTest {
 
 
     @Test public void test_stream_resize_50() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/resize/300/200/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/resize/300/200/"
         for (i in 1..50) {
             //println i + ":"
             streamTransform(baseUrl)
@@ -53,14 +53,14 @@ public class StreamRestTest {
 
 
         @Test public void test_stream_crop_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/crop/0.1/0.1/0.9/0.9/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/crop/0.1/0.1/0.9/0.9/"
 
         streamTransform(baseUrl)
 
     }
 
     @Test public void test_stream_crop_50() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/crop/0.1/0.1/0.9/0.9/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/crop/0.1/0.1/0.9/0.9/"
         for (i in 1..50) {
             //println i + ":"
             streamTransform(baseUrl)
@@ -69,14 +69,14 @@ public class StreamRestTest {
     }
 
         @Test public void test_stream_rotate_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/rotate/270/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/rotate/270/"
 
         streamTransform(baseUrl)
 
     }
 
     @Test public void test_stream_rotate_50() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/rotate/270/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/rotate/270/"
         for (i in 1..50) {
             //println i + ":"
             streamTransform(baseUrl)
@@ -86,14 +86,14 @@ public class StreamRestTest {
 
 
         @Test public void test_stream_vertical_flip_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/verticalflip/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/verticalflip/"
 
         streamTransform(baseUrl)
 
     }
 
     @Test public void test_stream_vertical_flip_50() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/verticalflip/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/verticalflip/"
         for (i in 1..50) {
             //println i + ":"
             streamTransform(baseUrl)
@@ -102,14 +102,14 @@ public class StreamRestTest {
     }
 
         @Test public void test_stream_horizontal_flip_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/horizontalflip/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/horizontalflip/"
 
         streamTransform(baseUrl)
 
     }
 
     @Test public void test_stream_horizontal_flip_50() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/horizontalflip/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/horizontalflip/"
         for (i in 1..50) {
             //println i + ":"
             streamTransform(baseUrl)
@@ -118,14 +118,14 @@ public class StreamRestTest {
     }
 
         @Test public void test_stream_lucky_one() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/lucky/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/lucky/"
 
         streamTransform(baseUrl)
 
     }
 
     @Test public void test_stream_lucky_50() {
-        def baseUrl = "http://xaymacastudios.appspot.com/stream/lucky/"
+        def baseUrl = "http://hcongruent.appspot.com/stream/lucky/"
         for (i in 1..50) {
             //println i + ":"
             streamTransform(baseUrl)

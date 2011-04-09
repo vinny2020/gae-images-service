@@ -5,13 +5,13 @@
     <meta name="generator" content="RapidWeaver"/>
 
     <title>image api example</title>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/urban/styles.css"  />
+     <link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/urban/styles.css"  />
         <link rel="stylesheet" type="text/css" media="print" href="/rw_common/themes/urban/print.css"  />
         <link rel="stylesheet" type="text/css" media="handheld" href="/rw_common/themes/urban/handheld.css"  />
         <link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/urban/css/sidebar/sidebar_right.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/urban/css/header/buildings_industrial.css" />
 
-    -->
+
     <script type="text/javascript" src="/rw_common/themes/urban/javascript.js"></script>
 
     <style type="text/css">
@@ -53,8 +53,15 @@
 <h1>Image transformation without saving into the Blobstore</h1>
 
 
-TEST 1: <span style="font-weight:bold">Flip horizontal</span>
+TEST 1: <span style="font-weight:bold">Flip horizontal</span> (/stream/horizontalflip/)
 
+//no saving post and transform
+post  "/stream/resize/@resizeX/@resizeY/", forward: "/streamTransform.groovy?&type=resize&resizeX=@resizeX&resizeY=@resizeY"
+post  "/stream/crop/@leftX/@topY/@rightX/@bottomY/", forward: "/streamTransform.groovy?&type=crop&leftX=@leftX&topY=@topY&rightX=@rightX&bottomY=@bottomY"
+post  "/stream/rotate/@rotateDegrees/", forward: "/streamTransform.groovy?&type=rotate&rotateDegrees=@rotateDegrees"
+post  "/stream/verticalflip/", forward: "/streamTransform.groovy?type=verticalflip"
+post  "/stream/horizontalflip/", forward: "/streamTransform.groovy?type=horizontalflip"
+post  "/stream/lucky/", forward: "/streamTransform.groovy?type=lucky"
 
 <br/>
 
@@ -79,7 +86,7 @@ TEST 1: <span style="font-weight:bold">Flip horizontal</span>
 <br/>
 
 
-TEST 2: <span style="font-weight:bold">Flip Vertical</span>
+TEST 2: <span style="font-weight:bold">Flip Vertical</span> (/stream/verticalflip/)
 
 <br/>
 

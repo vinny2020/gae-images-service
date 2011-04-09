@@ -2,7 +2,7 @@ Description
 create/upload a new image.
 
 URL
-http://xaymacastudios.appspot.com/image/new
+/image/new
 
 
 Available Formats
@@ -36,4 +36,4 @@ Sample XML Response
 	
 Example CURL Command
  
-  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://xaymacastudios.appspot.com/image/new
+  curl -v  -F "photo=@/tmp/vincentstoessel.jpg" -F "submit=submit" http://hcongruent.appspot.com/image/new

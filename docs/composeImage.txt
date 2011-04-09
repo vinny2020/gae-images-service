@@ -2,7 +2,7 @@ Description
 combine multiple images into 1 and choose png or jpeg as the output
 
 URL
- http://xaymacastudios.appspot.com/image/composition
+ http://hcongruent.appspot.com/image/composition
 
 
 Available Formats
@@ -55,6 +55,6 @@ Sample  Response
 	
 Example CURL Command
  
-curl -v -X PUT  -d @livecompose.xml --header "Content-Type: text/xml" http://xaymacastudios.appspot.com/image/composition
+curl -v -X PUT  -d @livecompose.xml --header "Content-Type: text/xml" http://hcongruent.appspot.com/image/composition
 
 
