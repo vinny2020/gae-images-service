@@ -1,0 +1,12 @@
+#contentContainer {
+	width: 940px;
+	padding-right: 0;
+}
+
+#sidebarContainer {
+	display: none;
+}
+
+#content-top, #content-bottom {
+	width: 940px;
+	}

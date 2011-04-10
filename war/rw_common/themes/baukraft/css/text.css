@@ -1,0 +1,110 @@
+/*
+	960 Grid System ~ Text CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	color: #444;
+	font: 13px/1.5 LiberationSerifRegular;
+	}
+
+p {
+	
+}
+
+b, strong {
+	
+}
+
+a:link, a:visited {
+	color: #a33d00;
+	text-decoration: none;
+	padding: 1px;
+}
+
+a:hover, a:active {
+	/*color: #fff;
+	background-color: #767e88;
+	border-color: transparent;*/	
+	background-color: #e3e3d4;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6, .movie-page-title, .movie-title {
+	color: #a33d00;
+	}
+
+h1 {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 23px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 19px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+h6 {
+	font-size: 15px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: disc;
+}
+
+li {
+	margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+	margin-bottom: 20px;
+}

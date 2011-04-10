@@ -1,0 +1,5 @@
+#container, #pageHeader, #headerImageContainer, #top-breadcrumbcontainer, #bottom-breadcrumbcontainer {
+	background-image: url(../images/double-border.gif);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+}
