@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="29263d0f-9462-40f9-85ec-66786d3c12e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/google-image-rest.iws" afterPath="$PROJECT_DIR$/google-image-rest.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/.rwmanifest.plist" afterPath="$PROJECT_DIR$/war/.rwmanifest.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/index.html" afterPath="$PROJECT_DIR$/war/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/rw_common/themes/baukraft/.rwmanifest.plist" afterPath="$PROJECT_DIR$/war/rw_common/themes/baukraft/.rwmanifest.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/sitemap.xml" afterPath="$PROJECT_DIR$/war/sitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/test/index.gtpl" afterPath="$PROJECT_DIR$/war/test/index.gtpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/war/test/stream.gtpl" afterPath="$PROJECT_DIR$/war/test/stream.gtpl" />
     </list>
     <ignored path="gaelyk-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,44 +75,10 @@
       <file leaf-file-name="index.gtpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/war/test/index.gtpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="30" selection-start="127" selection-end="133" vertical-scroll-proportion="-0.5714286">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jqueryRestTest.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/js/jqueryRestTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="3" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stream.gtpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/test/stream.gtpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="50" selection-start="1763" selection-end="1793" vertical-scroll-proportion="-13.142858">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="streamTransforms.gtpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/docs/streamTransforms.gtpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="29" selection-start="2083" selection-end="2083" vertical-scroll-proportion="-26.428572">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="95" column="237" selection-start="5613" selection-end="5641" vertical-scroll-proportion="-9.148936">
+              <folding>
+                <marker date="1302488671000" expanded="true" signature="5073:5163" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +86,18 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/war/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="59" selection-start="382" selection-end="398" vertical-scroll-proportion="0.18987341">
+            <state line="75" column="234" selection-start="5175" selection-end="5175" vertical-scroll-proportion="0.18309858">
+              <folding>
+                <marker date="1302488671000" expanded="true" signature="4506:4596" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="57" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,6 +121,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="stream.gtpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/test/stream.gtpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="106" column="192" selection-start="5562" selection-end="5562" vertical-scroll-proportion="-1.7872341">
+              <folding>
+                <marker date="1302488671000" expanded="true" signature="4521:4611" placeholder="..." />
+                <marker date="1302488671000" expanded="true" signature="4521:4611" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -152,22 +147,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/com/xaymaca/restapi/ImageRestTest.groovy" />
-        <option value="$PROJECT_DIR$/docs/composeImage.txt" />
         <option value="$PROJECT_DIR$/docs/simpleTransforms.txt" />
         <option value="$PROJECT_DIR$/test/com/xaymaca/restapi/StreamRestTest.groovy" />
         <option value="$PROJECT_DIR$/war/js/jqueryRestTest.js" />
         <option value="$PROJECT_DIR$/war/test/streamuploadTest.gtpl" />
-        <option value="$PROJECT_DIR$/war/index.html" />
         <option value="$PROJECT_DIR$/docs/streamTransforms.txt" />
         <option value="$PROJECT_DIR$/docs/streamTransforms.html" />
         <option value="$PROJECT_DIR$/docs/streamTransforms.gtpl" />
         <option value="$PROJECT_DIR$/docs/imageNew.txt" />
         <option value="$PROJECT_DIR$/docs/imageTransform.txt" />
         <option value="$PROJECT_DIR$/docs/getImage.txt" />
-        <option value="$PROJECT_DIR$/war/test/stream.gtpl" />
         <option value="$PROJECT_DIR$/war/docs/streamTransforms.gtpl" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/war/styled-2/index.gtpl" />
+        <option value="$PROJECT_DIR$/war/test/stream.gtpl" />
+        <option value="$PROJECT_DIR$/war/test/index.gtpl" />
+        <option value="$PROJECT_DIR$/war/index.html" />
       </list>
     </option>
   </component>
@@ -251,21 +246,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="google-image-rest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="restapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
+              <option name="myItemId" value="oldwebpages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -566,7 +547,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494577" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2451193" sideWeight="0.56125355" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32031816" sideWeight="0.56125355" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24104683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -616,16 +597,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/com/xaymaca/restapi/ImageRestTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/logging.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/composeImage.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="77" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.0" />
@@ -650,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/test/index.gtpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="127" selection-end="133" vertical-scroll-proportion="-0.5714286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/getImage.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.69539374">
@@ -671,9 +635,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/war/docs/streamTransforms.gtpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="29" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.83435583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/war/js/jqueryRestTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="3" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
+        <state line="42" column="3" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.7488856">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/oldwebpages/styled/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="44" selection-start="6208" selection-end="6208" vertical-scroll-proportion="0.09897611">
+          <folding>
+            <element signature="tag#head#0;tag#html#0" expanded="false" />
+            <marker date="1302472851000" expanded="true" signature="4574:4664" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/routes.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -687,36 +675,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/war/test/stream.gtpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="50" selection-start="1763" selection-end="1793" vertical-scroll-proportion="-13.142858">
-          <folding />
+        <state line="106" column="192" selection-start="5562" selection-end="5562" vertical-scroll-proportion="-1.7872341">
+          <folding>
+            <marker date="1302488671000" expanded="true" signature="4521:4611" placeholder="..." />
+            <marker date="1302488671000" expanded="true" signature="4521:4611" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/routes.groovy">
+    <entry file="file://$PROJECT_DIR$/war/oldwebpages/styled-2/index.gtpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/docs/streamTransforms.gtpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="29" selection-start="2083" selection-end="2083" vertical-scroll-proportion="-26.428572">
-          <folding />
+        <state line="68" column="19" selection-start="0" selection-end="4705" vertical-scroll-proportion="0.7703928">
+          <folding>
+            <marker date="1302473861000" expanded="true" signature="4573:4663" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
+        <state line="3" column="57" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/test/index.gtpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="237" selection-start="5613" selection-end="5641" vertical-scroll-proportion="-9.148936">
+          <folding>
+            <marker date="1302488671000" expanded="true" signature="5073:5163" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/war/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="59" selection-start="382" selection-end="398" vertical-scroll-proportion="0.18987341">
-          <folding />
+        <state line="75" column="234" selection-start="5175" selection-end="5175" vertical-scroll-proportion="0.18309858">
+          <folding>
+            <marker date="1302488671000" expanded="true" signature="4506:4596" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

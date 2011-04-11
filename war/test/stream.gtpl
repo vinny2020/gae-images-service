@@ -1,20 +1,72 @@
-<html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="robots" content="all"/>
-    <meta name="generator" content="RapidWeaver"/>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Streamed Images</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="RapidWeaver" />
+		<!-- User defined head content such as meta tags and encoding options -->
+        <script type="text/javascript" src="../rw_common/themes/baukraft/javascript.js"></script>
+        <!-- Google AJAX Libraries - jQuery 1.4.3 -->
+        <script src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("jquery", "1.4.3");
+        </script>
+        <!-- Fontface -->
+        <style type="text/css" media="all">
 
-    <title>image api example</title>
-     <link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/urban/styles.css"  />
-        <link rel="stylesheet" type="text/css" media="print" href="/rw_common/themes/urban/print.css"  />
-        <link rel="stylesheet" type="text/css" media="handheld" href="/rw_common/themes/urban/handheld.css"  />
-        <link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/urban/css/sidebar/sidebar_right.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="/rw_common/themes/urban/css/header/buildings_industrial.css" />
+            @font-face {
+                font-family: 'LiberationSerifRegular';
+                src: url('../rw_common/themes/baukraft/fonts/liberationserif-regular-webfont.eot');
+                src: local('‚ò∫'), url('../rw_common/themes/baukraft/fonts/liberationserif-regular-webfont.woff') format('woff'),
+                url('../rw_common/themes/baukraft/fonts/liberationserif-regular-webfont.ttf') format('truetype'),
+                url('%pathto(fonts/liberationserif-regular-webfont.svg#webfontW3XDV1aI)%') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'LiberationSerifBold';
+                src: url('../rw_common/themes/baukraft/fonts/liberationserif-bold-webfont.eot');
+                src: local('‚ò∫'), url('../rw_common/themes/baukraft/fonts/liberationserif-bold-webfont.woff') format('woff'),
+                url('../rw_common/themes/baukraft/fonts/liberationserif-bold-webfont.ttf') format('truetype'),
+                url('%pathto(fonts/liberationserif-bold-webfont.svg#webfontDS0SHySh)%') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+        </style>
+        <!-- jquery custom code -->
+        <script type="text/javascript" src="../rw_common/themes/baukraft/js/theme.js"></script>
+        <script type="text/javascript" src="../rw_common/themes/baukraft/js/DD_belatedPNG_0.0.8a.js"></script>
+        <link rel="stylesheet" href="../rw_common/themes/baukraft/css/reset.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="../rw_common/themes/baukraft/css/960.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="../rw_common/themes/baukraft/css/text.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="../rw_common/themes/baukraft/styles.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/text/default.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/header_font_size/medium.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/header/visibility/on.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/header_image/header_image00.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/container_font_size/medium.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/sidebar/sidebar_right.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/sidebar_font_size/medium.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/footer_font_size/medium.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/breadcrumb/position/top.css" />
+		<!-- Style variations - these are set up in the theme.plist -->
+        <!-- User defined styles -->
+        <!-- User defined javascript -->
 
 
-    <script type="text/javascript" src="/rw_common/themes/urban/javascript.js"></script>
-
-    <style type="text/css">
+        <!--[if IE]>
+            <link rel="stylesheet" href="../rw_common/themes/baukraft/css/styles-ie6.css" type="text/css" media="screen" charset="utf-8" />
+        <![endif]-->
+        <!--[if IE 6]>
+            <script type="text/javascript" src="../rw_common/themes/baukraft/js/theme-ie.js"></script>
+            <script type="text/javascript" src="../rw_common/themes/baukraft/js/DD_belatedPNG_0.0.8a.js"></script>
+            <script>
+                DD_belatedPNG.fix('#bg, #navcontainer-01 li, img');
+            </script>
+        <![endif]-->
+            <style type="text/css">
 
 
         label{
@@ -46,22 +98,51 @@
         }
 
     </style>
+    </head>
+   <body>
+           <div id="bg"></div>
+        <div id="pageHeader" class="container_16 clearfix">
+            <div id="navcontainer-01" class="grid_16">
+                <div id="navbar">
+                    <ul><li><a href="../" rel="self"><span>GAE Images Service Demo</span></a></li><li><a href="/test/index.gtpl" rel="self"><span>Persisted Images</span></a></li><li><a href="/test/stream.gtpl" rel="self" class="current"><span>Streamed Images</span></a></li></ul>
+                </div>
+            </div><!-- #navcontainer-01 -->
+            <div id="title" class="grid_16">
+                <div id="logo">
 
-</head>
+                </div><!-- #logo -->
+                <h1>GAE Images Service Demo</h1>
+            </div>
+            <h2 id="slogan" class="grid_16"></h2>
+        </div><!-- End page header -->
+        <div id="headerImageContainer" class="container_16">
+            <div id="headerImage">
+            </div>
+        </div>
+        <div id="top-breadcrumbcontainer" class="clearfix container_16">
 
-<body>
+        </div><!-- #breadcrumbcontainer -->
+        <div id="container" class="content container_16">
+            <div id="contentContainer" class="grid_12">
+                <div id="content">
 <h1>Image transformation without saving into the Blobstore</h1>
+
+Summary:
+<pre>
+post  "/stream/resize/@resizeX/@resizeY/"
+post  "/stream/crop/@leftX/@topY/@rightX/@bottomY/"
+post  "/stream/rotate/@rotateDegrees/"
+post  "/stream/verticalflip/"
+post  "/stream/horizontalflip/"
+post  "/stream/lucky/"
+
+</pre>
 
 
 TEST 1: <span style="font-weight:bold">Flip horizontal</span> (/stream/horizontalflip/)
 
-//no saving post and transform
-post  "/stream/resize/@resizeX/@resizeY/", forward: "/streamTransform.groovy?&type=resize&resizeX=@resizeX&resizeY=@resizeY"
-post  "/stream/crop/@leftX/@topY/@rightX/@bottomY/", forward: "/streamTransform.groovy?&type=crop&leftX=@leftX&topY=@topY&rightX=@rightX&bottomY=@bottomY"
-post  "/stream/rotate/@rotateDegrees/", forward: "/streamTransform.groovy?&type=rotate&rotateDegrees=@rotateDegrees"
-post  "/stream/verticalflip/", forward: "/streamTransform.groovy?type=verticalflip"
-post  "/stream/horizontalflip/", forward: "/streamTransform.groovy?type=horizontalflip"
-post  "/stream/lucky/", forward: "/streamTransform.groovy?type=lucky"
+
+
 
 <br/>
 
@@ -235,6 +316,25 @@ TEST 6: <span style="font-weight:bold">I Feel lucky</span>
 
 <div id="log"></div>
 
+ </div><!-- End content -->
+            </div><!-- End main content wrapper -->
+            <div id="sidebarContainer" class="grid_4">
+                <div class="sideHeader">
+                    <h2></h2>
+                </div><!-- Sidebar header -->
+                <div id="sidebar">
+                    <!-- sidebar content you enter in the page inspector -->
+                    <div id="plugin">
+                         <!-- sidebar content such as the blog archive links -->
+                    </div><!-- #plugin -->
+                </div><!-- End sidebar content -->
+            </div><!-- End sidebar wrapper -->
+        </div><!-- End container -->
+        <div id="bottom-breadcrumbcontainer" class="clearfix container_16">
 
+        </div><!-- #breadcrumbcontainer -->
+        <div id="footer" class="container_16">
+            <p>&copy; 2011 Xaymaca Studios <a href="#" id="rw_email_contact">Contact Me</a><script type="text/javascript">var _rwObsfuscatedHref0 = "mai";var _rwObsfuscatedHref1 = "lto";var _rwObsfuscatedHref2 = ":xa";var _rwObsfuscatedHref3 = "yma";var _rwObsfuscatedHref4 = "ca@";var _rwObsfuscatedHref5 = "gma";var _rwObsfuscatedHref6 = "il.";var _rwObsfuscatedHref7 = "com";var _rwObsfuscatedHref = _rwObsfuscatedHref0+_rwObsfuscatedHref1+_rwObsfuscatedHref2+_rwObsfuscatedHref3+_rwObsfuscatedHref4+_rwObsfuscatedHref5+_rwObsfuscatedHref6+_rwObsfuscatedHref7; document.getElementById('rw_email_contact').href = _rwObsfuscatedHref;</script></p>
+        </div><!-- End Footer -->
 </body>
 </html>

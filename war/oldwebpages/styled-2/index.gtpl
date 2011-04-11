@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>GAE Images Service Demo</title>
+        <title>Streamed Images</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="RapidWeaver" />
 		<!-- User defined head content such as meta tags and encoding options -->
-        <script type="text/javascript" src="rw_common/themes/baukraft/javascript.js"></script>
+        <script type="text/javascript" src="../rw_common/themes/baukraft/javascript.js"></script>
         <!-- Google AJAX Libraries - jQuery 1.4.3 -->
         <script src="http://www.google.com/jsapi"></script>
         <script type="text/javascript">
@@ -16,9 +16,9 @@
 
             @font-face {
                 font-family: 'LiberationSerifRegular';
-                src: url('rw_common/themes/baukraft/fonts/liberationserif-regular-webfont.eot');
-                src: local('‚ò∫'), url('rw_common/themes/baukraft/fonts/liberationserif-regular-webfont.woff') format('woff'),
-                url('rw_common/themes/baukraft/fonts/liberationserif-regular-webfont.ttf') format('truetype'),
+                src: url('../rw_common/themes/baukraft/fonts/liberationserif-regular-webfont.eot');
+                src: local('‚ò∫'), url('../rw_common/themes/baukraft/fonts/liberationserif-regular-webfont.woff') format('woff'),
+                url('../rw_common/themes/baukraft/fonts/liberationserif-regular-webfont.ttf') format('truetype'),
                 url('%pathto(fonts/liberationserif-regular-webfont.svg#webfontW3XDV1aI)%') format('svg');
                 font-weight: normal;
                 font-style: normal;
@@ -26,9 +26,9 @@
 
             @font-face {
                 font-family: 'LiberationSerifBold';
-                src: url('rw_common/themes/baukraft/fonts/liberationserif-bold-webfont.eot');
-                src: local('‚ò∫'), url('rw_common/themes/baukraft/fonts/liberationserif-bold-webfont.woff') format('woff'),
-                url('rw_common/themes/baukraft/fonts/liberationserif-bold-webfont.ttf') format('truetype'),
+                src: url('../rw_common/themes/baukraft/fonts/liberationserif-bold-webfont.eot');
+                src: local('‚ò∫'), url('../rw_common/themes/baukraft/fonts/liberationserif-bold-webfont.woff') format('woff'),
+                url('../rw_common/themes/baukraft/fonts/liberationserif-bold-webfont.ttf') format('truetype'),
                 url('%pathto(fonts/liberationserif-bold-webfont.svg#webfontDS0SHySh)%') format('svg');
                 font-weight: normal;
                 font-style: normal;
@@ -36,32 +36,32 @@
             
         </style>        
         <!-- jquery custom code -->
-        <script type="text/javascript" src="rw_common/themes/baukraft/js/theme.js"></script>
-        <script type="text/javascript" src="rw_common/themes/baukraft/js/DD_belatedPNG_0.0.8a.js"></script>
-        <link rel="stylesheet" href="rw_common/themes/baukraft/css/reset.css" type="text/css" media="screen" charset="utf-8" />
-        <link rel="stylesheet" href="rw_common/themes/baukraft/css/960.css" type="text/css" media="screen" charset="utf-8" />
-        <link rel="stylesheet" href="rw_common/themes/baukraft/css/text.css" type="text/css" media="screen" charset="utf-8" />        
-        <link rel="stylesheet" href="rw_common/themes/baukraft/styles.css" type="text/css" media="screen" charset="utf-8" />
-        <link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/baukraft/css/text/default.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/baukraft/css/header_font_size/medium.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/baukraft/css/header/visibility/on.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/baukraft/css/header_image/header_image00.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/baukraft/css/container_font_size/medium.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/baukraft/css/sidebar/sidebar_right.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/baukraft/css/sidebar_font_size/medium.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/baukraft/css/footer_font_size/medium.css" />
-		<link rel="stylesheet" type="text/css" media="screen" href="rw_common/themes/baukraft/css/breadcrumb/position/top.css" />
+        <script type="text/javascript" src="../rw_common/themes/baukraft/js/theme.js"></script>
+        <script type="text/javascript" src="../rw_common/themes/baukraft/js/DD_belatedPNG_0.0.8a.js"></script>
+        <link rel="stylesheet" href="../rw_common/themes/baukraft/css/reset.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="../rw_common/themes/baukraft/css/960.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" href="../rw_common/themes/baukraft/css/text.css" type="text/css" media="screen" charset="utf-8" />        
+        <link rel="stylesheet" href="../rw_common/themes/baukraft/styles.css" type="text/css" media="screen" charset="utf-8" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/text/default.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/header_font_size/medium.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/header/visibility/on.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/header_image/header_image00.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/container_font_size/medium.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/sidebar/sidebar_right.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/sidebar_font_size/medium.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/footer_font_size/medium.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../rw_common/themes/baukraft/css/breadcrumb/position/top.css" />
 		<!-- Style variations - these are set up in the theme.plist -->
         <!-- User defined styles -->
         <!-- User defined javascript -->
         
         
         <!--[if IE]>
-            <link rel="stylesheet" href="rw_common/themes/baukraft/css/styles-ie6.css" type="text/css" media="screen" charset="utf-8" />
+            <link rel="stylesheet" href="../rw_common/themes/baukraft/css/styles-ie6.css" type="text/css" media="screen" charset="utf-8" />
         <![endif]-->        
         <!--[if IE 6]>
-            <script type="text/javascript" src="rw_common/themes/baukraft/js/theme-ie.js"></script>
-            <script type="text/javascript" src="rw_common/themes/baukraft/js/DD_belatedPNG_0.0.8a.js"></script>
+            <script type="text/javascript" src="../rw_common/themes/baukraft/js/theme-ie.js"></script>
+            <script type="text/javascript" src="../rw_common/themes/baukraft/js/DD_belatedPNG_0.0.8a.js"></script>
             <script>
                 DD_belatedPNG.fix('#bg, #navcontainer-01 li, img');
             </script>
@@ -73,7 +73,7 @@
         <div id="pageHeader" class="container_16 clearfix">
             <div id="navcontainer-01" class="grid_16">
                 <div id="navbar">
-                    <ul><li><a href="./" rel="self" class="current"><span>GAE Images Service Demo</span></a></li><li><a href="test/index.gtpl" rel="self"><span>Persisted Images</span></a></li><li><a href="test/stream.gtpl" rel="self"><span>Streamed Images</span></a></li></ul>
+                    <ul><li><a href="../" rel="self"><span>GAE Images Service Demo</span></a></li><li><a href="../styled/" rel="self"><span>Persisted Images</span></a></li><li><a href="index.gtpl" rel="self" class="current"><span>Streams Images</span></a></li></ul>
                 </div>
             </div><!-- #navcontainer-01 --> 
             <div id="title" class="grid_16">
@@ -94,7 +94,7 @@
         <div id="container" class="content container_16">
             <div id="contentContainer" class="grid_12">
                 <div id="content">
-                    <h2>Image transformation Demos</h2><p style="text-align:center;"><br /><br /><ul class="disc"><li>Live image transformations with persisted images <a href="test/index.gtpl" rel="self">here</a></li></ul><ul class="disc"><li>Live image transformations without persistance <a href="test/stream.gtpl" rel="self">here</a></li></ul></p>
+                    
                 </div><!-- End content -->
             </div><!-- End main content wrapper -->
             <div id="sidebarContainer" class="grid_4">

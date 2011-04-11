@@ -2,5 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://hcongruent.appspot.com/index.html</loc>
+		<lastmod>2011-04-10</lastmod>
+	</url>
+	<url>
+		<loc>http://hcongruent.appspot.com/styled/index.html</loc>
+		<lastmod>2011-04-10</lastmod>
+	</url>
+	<url>
+		<loc>http://hcongruent.appspot.com/styled-2/index.gtpl</loc>
+		<lastmod>2011-04-10</lastmod>
 	</url>
 </urlset>
