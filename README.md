@@ -9,7 +9,7 @@ Images are saved via the GAE BlobStore. As of the time of this writing, the Blob
 ULRFetch requests are limited to 1Mb and 30 seconds. Please visit the docs to see what the current limitations are.
 [Quotas and Limits](http://code.google.com/appengine/docs/java/images/overview.html#Quotas_and_Limits)
 
-To see the service in action: [http://hcongruent.appspot.com/test](http://hcongruent.appspot.com/test)
+To see the service in action: [GAE Images Sevice Demo](http://hcongruent.appspot.com)
 
 TODO:
 
