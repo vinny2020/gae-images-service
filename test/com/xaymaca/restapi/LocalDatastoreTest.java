@@ -23,14 +23,14 @@ import static org.junit.Assert.*;
 public class LocalDatastoreTest {
 
     private final LocalServiceTestHelper helper =
-        new LocalServiceTestHelper(new LocalDatastoreServiceTestConfig());
+            new LocalServiceTestHelper(new LocalDatastoreServiceTestConfig());
 
-    @Before
+
     public void setUp() {
         helper.setUp();
     }
 
-    @After
+
     public void tearDown() {
         helper.tearDown();
     }
@@ -44,12 +44,12 @@ public class LocalDatastoreTest {
         assertEquals(2, ds.prepare(new Query("yam")).countEntities(withLimit(10)));
     }
 
-    @Test
+
     public void testInsert1() {
         doTest();
     }
 
-    @Test
+
     public void testInsert2() {
         doTest();
     }

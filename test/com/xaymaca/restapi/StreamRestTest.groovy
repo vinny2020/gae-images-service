@@ -25,7 +25,7 @@ import static groovyx.net.http.ContentType.*;
 public class StreamRestTest {
 
     String imageType = 'image/jpeg'
-    File imgFile = new File('/Users/xaymaca/Pictures/IMG_2029.jpg')
+    File imgFile = new File('/Users/vstoessel/Pictures/DSC_2802.jpg')
     FileBody cbFile = new FileBody(imgFile, imageType)
     StringBody oneParam = new StringBody("Submit")
 
